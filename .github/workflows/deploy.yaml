@@ -1,0 +1,35 @@
+name: CI/CD Microservicio
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      IMAGE_NAME: microservicio-ejemplo
+      REGISTRY: docker.io
+      REGISTRY_USER: ${{ secrets.DOCKER_USERNAME }}
+      REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Log in to DockerHub
+        run: echo "${{ env.REGISTRY_PASSWORD }}" | docker login -u "${{ env.REGISTRY_USER }}" --password-stdin
+
+      - name: Build Docker image
+        run: docker build -t $REGISTRY_USER/$IMAGE_NAME:latest .
+
+      - name: Push Docker image
+        run: docker push $REGISTRY_USER/$IMAGE_NAME:latest
+
+      - name: Update Helm values with new image (si usas GitOps)
+        run: |   
+          sed -i "s|tag: .*|tag: latest|" Chart/values.yaml
+          git add Chart/values.yaml
+          git commit -m "Update image tag"
+          git push

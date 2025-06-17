@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PWUjQrwBjJfNBuZU0gtii84JLCof7rQ8UjbA4YBR7G0=",
+  "Source": "MicroservicioEjemplo",
+  "BasePath": "_content/MicroservicioEjemplo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

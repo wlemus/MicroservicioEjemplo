@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|c:\\users\\w\\source\\repos\\microservicioejemplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|c:\\users\\w\\source\\repos\\microservicioejemplo\\microservicioejemplo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|solutionrelative:microservicioejemplo.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|c:\\users\\w\\source\\repos\\microservicioejemplo\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|c:\\users\\w\\source\\repos\\microservicioejemplo\\microservicioejemplo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|solutionrelative:microservicioejemplo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|c:\\users\\w\\source\\repos\\microservicioejemplo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9F3A73AC-3D20-291D-92E4-692875872502}|MicroservicioEjemplo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 285,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-17T01:05:22.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MicroservicioEjemplo.http",
+              "DocumentMoniker": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\MicroservicioEjemplo.http",
+              "RelativeDocumentMoniker": "MicroservicioEjemplo.http",
+              "ToolTip": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\MicroservicioEjemplo.http",
+              "RelativeToolTip": "MicroservicioEjemplo.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-17T01:00:34.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MicroservicioEjemplo",
+              "DocumentMoniker": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\MicroservicioEjemplo.csproj",
+              "RelativeDocumentMoniker": "MicroservicioEjemplo.csproj",
+              "ToolTip": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\MicroservicioEjemplo.csproj",
+              "RelativeToolTip": "MicroservicioEjemplo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-17T01:00:07.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T00:59:57.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\W\\source\\repos\\MicroservicioEjemplo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-17T00:59:58.585Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

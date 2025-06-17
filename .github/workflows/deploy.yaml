@@ -8,6 +8,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write
+      
     env:
       IMAGE_NAME: ghcr.io/wlemus/microservicio-ejemplo
       REGISTRY: docker.io
@@ -19,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
      
       - name: Build Docker image
-        run: docker build -t $REGISTRY_USER/$IMAGE_NAME:latest .
+        run: docker build -t $IMAGE_NAME:latest
 
       - name: Push Docker image
         run: docker push $IMAGE_NAME:latest

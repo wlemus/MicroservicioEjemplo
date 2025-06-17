@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: microservicio-ejemplo
+      IMAGE_NAME: ghcr.io/wlemus/microservicio-ejemplo
       REGISTRY: docker.io
       REGISTRY_USER: ${{ secrets.DOCKER_USERNAME }}
       REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
@@ -17,15 +17,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: Log in to DockerHub
-        run: echo "${{ env.REGISTRY_PASSWORD }}" | docker login -u "${{ env.REGISTRY_USER }}" --password-stdin
-
+     
       - name: Build Docker image
         run: docker build -t $REGISTRY_USER/$IMAGE_NAME:latest .
 
       - name: Push Docker image
-        run: docker push $REGISTRY_USER/$IMAGE_NAME:latest
+        run: docker push $IMAGE_NAME:latest
 
       - name: Update Helm values with new image (si usas GitOps)
         run: |   

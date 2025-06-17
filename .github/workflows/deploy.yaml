@@ -2,35 +2,33 @@ name: CI/CD Microservicio
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+
+env:
+  IMAGE_NAME: ghcr.io/wlemus/microservicio-ejemplo
 
 jobs:
-  build-and-deploy:
+  build-and-push:
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
       packages: write
-      
-    env:
-      IMAGE_NAME: ghcr.io/wlemus/microservicio-ejemplo
-      REGISTRY: docker.io
-      REGISTRY_USER: ${{ secrets.DOCKER_USERNAME }}
-      REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-     
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build Docker image
-        run: docker build -t $IMAGE_NAME:latest
+        run: docker build -t $IMAGE_NAME:latest .
 
       - name: Push Docker image
         run: docker push $IMAGE_NAME:latest
-
-      - name: Update Helm values with new image (si usas GitOps)
-        run: |   
-          sed -i "s|tag: .*|tag: latest|" Chart/values.yaml
-          git add Chart/values.yaml
-          git commit -m "Update image tag"
-          git push

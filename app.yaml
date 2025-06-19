@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: microservicio
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/wlemus/MicroservicioEjemplo.git
+    targetRevision: main
+    path: microservicio-chart
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -35,3 +35,4 @@ C:\Users\W\source\repos\MicroservicioEjemplo\obj\Debug\net8.0\MicroservicioEjemp
 C:\Users\W\source\repos\MicroservicioEjemplo\obj\Debug\net8.0\MicroservicioEjemplo.genruntimeconfig.cache
 C:\Users\W\source\repos\MicroservicioEjemplo\obj\Debug\net8.0\ref\MicroservicioEjemplo.dll
 C:\Users\W\source\repos\MicroservicioEjemplo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\W\source\repos\MicroservicioEjemplo\obj\Debug\net8.0\MicroservicioEjemplo.sourcelink.json

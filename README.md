@@ -14,10 +14,6 @@ Este proyecto implementa un microservicio en .NET 8 con arquitectura basada en c
 - ✅ [GitHub Actions](https://github.com/features/actions)
 - ✅ [GitHub Container Registry (GHCR)](https://ghcr.io)
 
----
-
-## 📦 Estructura del proyecto
-
 
 ---
 
@@ -29,6 +25,8 @@ Este proyecto implementa un microservicio en .NET 8 con arquitectura basada en c
    ```
   
   Exposición del endpoint:  `/weatherforecast `
+
+---
 
 ## 📦 FASE 2 – Contenedores Docker
 Dockerfile basado en .NET 8:
@@ -58,6 +56,8 @@ COPY --from=build /out .
 ENTRYPOINT ["dotnet", "MicroservicioEjemplo.dll"]
   ```
 
+---
+
 ## 🎯 FASE 3 – Helm Chart
 Se creó un  `Chart ` de Helm en  `microservicio-chart/ ` que define el  `Deployment `.
 
@@ -69,6 +69,8 @@ Se creó un  `Chart ` de Helm en  `microservicio-chart/ ` que define el  `Deploy
 
 - Recursos y etiquetas
 
+---
+
 ## 🚀 FASE 4 – Despliegue con ArgoCD
 ArgoCD desplegado en el clúster local (Docker Desktop)
 
@@ -77,6 +79,8 @@ ArgoCD desplegado en el clúster local (Docker Desktop)
 - Se creó una  `Application ` apuntando al  `Chart ` de Helm
 
 - El despliegue se actualiza automáticamente con cada commit
+
+---
 
 ## 🔄 FASE 5 – CI/CD con GitHub Actions
 Pipeline  ` .github/workflows/deploy.yaml  `configurado con:
